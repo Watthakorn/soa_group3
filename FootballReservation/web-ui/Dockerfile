@@ -1,0 +1,9 @@
+FROM node:latest
+WORKDIR /home/app
+ADD . /home/app
+RUN \
+    npm install -g bower && \
+    npm install && \
+    bower install --config.interactive=false --allow-root
+EXPOSE 9000
+CMD ["node", "server/app.js"]
