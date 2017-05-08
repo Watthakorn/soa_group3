@@ -50,27 +50,4 @@ $ `mvn clean package` in service folder first
 
 `docker container run  -d --name users-service --link mysql-user -p 9005:9005 users-service`
 
-# Example deployed
-
-## 128.199.213.153
-
-reservation
-
-http://128.199.213.153:9004/reservations
-
-## 128.199.197.151
-
-Use same database admin-user
-
-http://128.199.197.151:9002/admin
-
-http://128.199.197.151:9005
-
-
-## 188.166.191.248
-
-Use same database listfield-manage 
-
-http://188.166.191.248:9001/listfield
-
-http://188.166.191.248:9003/field/1
+https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose
